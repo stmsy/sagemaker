@@ -20,7 +20,7 @@ pip install -r requirements.txt
 
 **Note**: As listed in `requirements.txt`, the project assumes that you install JupyterLab but you may opt to use Jupyter Notebook instead.
 
-Make sure your AWS or SageMaker credentials are set properly. Both `AWS ACCESS KEY ID` and `AWS SECRET ACCESS KEY` must be provided by the system administrator. Also, before you run the notebooks, edit `settings.yml` as follows:
+Make sure your AWS or SageMaker credentials are set properly and both `AWS ACCESS KEY ID` and `AWS SECRET ACCESS KEY` are be provided. Also, before you run the notebooks, prepare `settings.yml` as follows:
 
 ```yaml
   user: YOUR_USERNAME  # This will be used as your data directory name in S3
