@@ -1,6 +1,6 @@
 # Simple SageMaker and Boto Project Example
 
-This repo contains one Jupyter notebook that let you try to:
+This repo contains one Jupyter notebook that lets you try to:
 
 1. Use the SageMaker instances with script mode to train the TensorFlow deep learning model and to classify the Kuzushiji-MNIST or KMNIST images (`kmnist_cnn.ipynb`)
 
