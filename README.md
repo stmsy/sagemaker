@@ -1,16 +1,14 @@
-# Sample SageMaker and Boto Project
+# Simple SageMaker and Boto Project Example
 
-This repo contains two sample Jupyter notebooks and one Python script that let you try to:
+This repo contains one Jupyter notebook that let you try to:
 
-1. Download the dataset stored in the S3 bucket and upload the preprocessed ones back (`kmnist_boto3.ipynb`)
-
-2. Use the SageMaker instances with script mode to train the TensorFlow deep learning model and to classify the Kuzushiji-MNIST or KMNIST images (`kmnist_cnn.ipynb`)
+1. Use the SageMaker instances with script mode to train the TensorFlow deep learning model and to classify the Kuzushiji-MNIST or KMNIST images (`kmnist_cnn.ipynb`)
 
 The dataset for the project was initially obtained from the [Kuzushiji Recognition](https://www.kaggle.com/c/kuzushiji-recognition/overview) competition at [Kaggle](https://www.kaggle.com/). Visit [ROIS-DS Center for Open Data in the Humanities](http://codh.rois.ac.jp/) for more detail.
 
 # Prerequisites
 
-`Python 3.6` or later with virtual environment is preferred.
+`Python 3.7` or later with virtual environment is preferred.
 
 Run the following command and install all the necessary packages including the [SageMaker Python SDK](https://github.com/aws/sagemaker-python-sdk) and [AWS Python SDK](https://github.com/boto/boto3) a.k.a. Boto 3.
 
