@@ -19,12 +19,12 @@ from tensorflow.python.keras.utils import to_categorical
 
 PWD = Path.cwd()
 DATA_DIR = PWD.joinpath('..', 'data').resolve()
-KMNIST_DATA_DIR = DATA_DIR.joinpath('kuzushiji')
+KMNIST_DATA_DIR = DATA_DIR.joinpath('kmnist')
 
 TEST_DATA_OFFSET = 5000
 
-EPOCHS = 1
-BATCH_SIZE = 10
+EPOCHS = 100
+BATCH_SIZE = 50
 NUM_CLASSES = 10
 
 
@@ -57,7 +57,7 @@ def _normalize_images(X: np.ndarray) -> np.ndarray:
 def _reshape_images(X: np.ndarray) -> np.ndarray:
     """
     Reshape and convert the collection of matrices to the one of vectors.
-   """
+    """
     return X.reshape(X.shape + (1,))
 
 
