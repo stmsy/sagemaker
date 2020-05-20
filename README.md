@@ -21,12 +21,22 @@ pip install -r requirements.txt
 Make sure your AWS or SageMaker credentials are set properly and both `AWS ACCESS KEY ID` and `AWS SECRET ACCESS KEY` are be provided. Also, before you run the notebooks, prepare `settings.yml` as follows:
 
 ```yaml
-  user: YOUR_USERNAME  # This will be used as your data directory name in S3
-  ...
-  aws:
-    sagemaker:
-      account_id: YOUR_SAGEMAKER_ACCOUNT_ID
-      role_name: YOUR_SAGEMAKER_ROLE_NAME
+  user: YOUR_USERNAME
+  sagemaker:
+    account_id: YOUR_SAGEMAKER_ACCOUNT_ID
+    role_name: YOUR_SAGEMAKER_ROLE_NAME
+  s3:
+    bucket:
+      name: BUCKET_NAME
+  instance:
+    train:
+      type: TRAIN_INSTANCE_TYPE
+      count: TRAIN_INSTANCE_COUNT
+    endpoint:
+      name: ENDPOINT_NAME
+      type: INITIAL_INSTANCE_TYPE
+      count: INSTANCE_COUNT
+      delete: True  # Set either 'True' or 'False'
 ```
 
 # References
